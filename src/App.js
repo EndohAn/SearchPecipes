@@ -57,16 +57,17 @@ return (
     <button>
     <img className="icons" src = "https://img.icons8.com/plasticine/512/tap.png" alt="icon" />
     </button>
-    
+    </div>
 
-
-    {myRecipes.map(element =>{
+  <div>
+    {myRecipes.map(element =>(
       <MyRecipesComponent
        propsLabel = {element.recipe.label} 
        propsImage={element.recipe.image}
        propsCalorie ={element.recipe.calories}
-       propsIngredients ={element.recipe.ingredientLines} />
-    })}
+       propsIngredients ={element.recipe.ingredientLines}
+       />
+    ))}
   </div> 
   </div>
   
